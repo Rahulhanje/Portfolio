@@ -9,6 +9,7 @@ const StarBackground = () => {
 
   useEffect(() => {
     // Scene setup
+    const currentMountRef = mountRef.current; // Copy the ref value
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
     camera.position.z = 1;
@@ -17,8 +18,8 @@ const StarBackground = () => {
     renderer.setSize(window.innerWidth, window.innerHeight);
     
     // Ensure mountRef.current is not null before appending the renderer's DOM element
-    if (mountRef.current) {
-      mountRef.current.appendChild(renderer.domElement);
+    if (currentMountRef) {
+      currentMountRef.appendChild(renderer.domElement);
     }
 
     // Create star geometry
@@ -48,12 +49,12 @@ const StarBackground = () => {
 
     // Clean up on component unmount
     return () => {
-      if (mountRef.current) {
-        mountRef.current.removeChild(renderer.domElement);
+      if (currentMountRef) {
+        currentMountRef.removeChild(renderer.domElement);
       }
       renderer.dispose();
     };
-  }, []);
+  }, []); // Keep the dependency array empty to run only on mount
 
   return (
     <div className="w-full h-auto fixed inset-0 z-[20]" ref={mountRef} />
