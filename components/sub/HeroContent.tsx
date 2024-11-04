@@ -5,32 +5,26 @@ import { slideInFromLeft, slideInFromRight, slideInFromTop } from '@/utils/motio
 import { SparklesIcon } from '@heroicons/react/24/outline'
 import Image from 'next/image'
 
+
 const HeroContent = () => (
     <motion.div
         initial="hidden"
         animate="visible"
-        className="flex flex-row items-center justify-between w-full px-20 mt-40 z-[20]"
+        className="flex sm:flex-row flex-col items-center justify-between w-full sm:px-10 px-5 mt-20 z-[20]"
     >
-        <div className="flex flex-col gap-5">
-            <motion.div
-                variants={slideInFromTop}
-                className="Welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[0.9]"
-            >
-                <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
-                <h1 className="Welcome-text text-[13px]">Rahul Sanjeevkumar Hanje</h1>
-            </motion.div>
+        <div className="flex flex-col sm:gap-5 gap-2">
             <motion.div
                 variants={slideInFromLeft(0.5)}
-                className="flex flex-col gap-6 mt-6 text-6xl font-bold text-white max-w-[600px] w-auto h-auto"
+                className="flex flex-col gap-6 mt-6 sm:text-5xl text-3xl font-bold text-white max-w-[600px] w-auto h-auto"
             >
-                Rahul
+                Hi there I am Rahul 👋
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
                     Full Stack Developer
                 </span>
             </motion.div>
             <motion.p
                 variants={slideInFromLeft(0.8)}
-                className="text-lg text-gray-400 my-5 max-w-[600px]"
+                className="text-lg text-gray-400 my-5 max-w-[600px] -z-10"
             >
                 I&apos;m a full stack developer with a passion for building scalable and efficient web applications.
             </motion.p>
