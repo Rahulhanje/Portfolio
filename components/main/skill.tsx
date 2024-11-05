@@ -2,6 +2,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { slideInFromLeft } from '@/utils/motion';
+import Image from 'next/image';
 
 const SkillsNew = () => {
     return (
@@ -22,14 +23,14 @@ const SkillsNew = () => {
                             Programming Languages
                         </div>
                         <div className='pl-4 grid grid-cols-4 gap-5 pt-5 w-[300px]'>
-                            <img src="/c.png" alt="C" className="w-10 h-10" />
-                            <img src="/cpp.png" alt="C++" className="w-10 h-10" />
-                            <img src="/java.png" alt="Java" className="w-10 h-10" />
-                            <img src="/javascript.png" alt="JavaScript" className="w-10 h-10" />
-                            <img src="/typescript.png" alt="TypeScript" className="w-9 h-10" />
-                            <img src="/python.png" alt="Python" className="w-9 h-10" />
-                            <img src="/html.png" alt="HTML" className="w-10 h-10" />
-                            <img src="/css.png" alt="CSS" className="w-10 h-10" />
+                            <Image src="/c.png" alt="C" width={40} height={40} />
+                            <Image src="/cpp.png" alt="C++" width={40} height={40} />
+                            <Image src="/java.png" alt="Java" width={40} height={40} />
+                            <Image src="/javascript.png" alt="JavaScript"width={40} height={40} />
+                            <Image src="/typescript.png" alt="TypeScript"width={40} height={40} />
+                            <Image src="/python.png" alt="Python" width={40} height={40} />
+                            <Image src="/html.png" alt="HTML"width={40} height={40} />
+                            <Image src="/css.png" alt="CSS" width={40} height={40} />
                         </div>
                     </div>
                     <div className="border-l h-full relative pt-5">
@@ -38,16 +39,16 @@ const SkillsNew = () => {
                             Frameworks & Databases
                         </div>
                         <div className='pl-4 grid grid-cols-4 gap-5 pt-5 w-[300px]'>
-                            <img src="/node-js.png" alt="Node.js" className="w-10 h-10" />
-                            <img src="/express.png" alt="Express" className="w-10 h-10" />
-                            <img src="/react.png" alt="React" className="w-10 h-10" />
-                            <img src="/tailwind.png" alt="Tailwind CSS" className="w-10 h-10" />
-                            <img src="/next.png" alt="Next.js" className="w-10 h-10" />
-                            <img src="/hono.png" alt="Hono" className="w-9 h-10" />
-                            <img src="/mysql.png" alt="MySQL" className="w-9 h-10" />
-                            <img src="/mongodb.png" alt="MongoDB" className="w-10 h-10" />
-                            <img src="/postger.png" alt="PostgreSQL" className="w-10 h-10" />
-                            <img src="/prisma.webp" alt="Prisma" className="w-10 h-10" />
+                            <Image src="/node-js.png" alt="Node.js"width={40} height={40} />
+                            <Image src="/express.png" alt="Express" width={40} height={40} />
+                            <Image src="/react.png" alt="React" width={40} height={40} />
+                            <Image src="/tailwind.png" alt="Tailwind CSS" width={40} height={40} />
+                            <Image src="/next.png" alt="Next.js" width={40} height={40} />
+                            <Image src="/hono.png" alt="Hono" width={40} height={40} />
+                            <Image src="/mysql.png" alt="MySQL" width={40} height={40} />
+                            <Image src="/mongodb.png" alt="MongoDB" width={40} height={40} />
+                            <Image src="/postger.png" alt="PostgreSQL" width={40} height={40} />
+                            <Image src="/prisma.webp" alt="Prisma" width={40} height={40} />
                         </div>
                     </div>
                     <div className="border-l h-full relative pt-5">
@@ -56,11 +57,11 @@ const SkillsNew = () => {
                             Tools
                         </div>
                         <div className='pl-4 grid grid-cols-4 gap-5 pt-5 w-[300px]'>
-                            <img src="/docker.webp" alt="Docker" className="w-10 h-10" />
-                            <img src="/appwrite.png" alt="Appwrite" className="w-10 h-10" />
-                            <img src="/visual-studio-code.png" alt="Visual Studio Code" className="w-10 h-10" />
-                            <img src="/git.png" alt="Git" className="w-9 h-10" />
-                            <img src="/github.png" alt="GitHub" className="w-9 h-10" />
+                            <Image src="/docker.webp" alt="Docker" width={40} height={40} />
+                            <Image src="/appwrite.png" alt="Appwrite" width={40} height={40} />
+                            <Image src="/visual-studio-code.png" alt="Visual Studio Code" width={40} height={40} /> 
+                            <Image src="/git.png" alt="Git" width={40} height={40} />
+                            <Image src="/github.png" alt="GitHub" width={40} height={40} />
                         </div>
                     </div>
                 </motion.div>

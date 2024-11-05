@@ -19,7 +19,7 @@ const Projects = () => {
             <img src="/linknest.png" alt="Next Website" className="w-full h-full rounded-t-[26px]" />
             <div className=" px-2 py-4 rounded-b-2xl ">
               <p className="font-bold text-xl">LinkNest</p>
-              <p>LinkNest is a web application built with React and Appwrite, enabling users to share and discover posts. The application features user authentication, images posting, search functionality, and user profiles. It leverages React Query for data fetching and caching, and Tailwind CSS for styling</p>
+              <p>LinkNest is a web application built with React and Appwrite, enabling users to share and discover posts. The application features user authentication, imgs posting, search functionality, and user profiles. It leverages React Query for data fetching and caching, and Tailwind CSS for styling</p>
               <div className="cursor-pointer pt-5 flex gap-5">
 
                 <Link href="https://github.com/Rahulhanje/LinkNest.git" passHref>
@@ -37,7 +37,7 @@ const Projects = () => {
           </BackgroundGradient>
 
           <BackgroundGradient >
-            <img src="/Feedbackhub.png" alt="Next Website" className="w-full h-full rounded-t-[26px]" />
+            <img  src="/Feedbackhub.png" alt="Next Website" className="w-full h-full rounded-t-[26px]" />
             <div className=" px-2 py-4 rounded-b-2xl ">
               <p className="font-bold text-xl">Feedbackhub</p>
               <p>Users can create projects and receive embeddable codes to integrate into their websites, while managing user subscriptions and viewing project instructions. The feedback system allows visitors to submit ratings, which can be easily managed and sorted in the dashboard</p>
@@ -128,7 +128,7 @@ const Projects = () => {
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         /> */}
         {/* <ProjectCard
-          src="/CardImage.png"
+          src="/Cardimg.png"
           title="Interactive Website Cards"
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         />

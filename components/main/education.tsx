@@ -29,14 +29,14 @@ const Education = () => {
 
                             <p>20220 - 2022</p>
                             <h1 className="text-lg font-semibold sm:text-xl" >PRE UNIVERSITY COURSE</h1>
-                            <h2 className="text-md font-medium sm:text-lg">Rashtrotthan Vidya Kendra, "TAPAS" Bengaluru</h2>
+                            <h2 className="text-md font-medium sm:text-lg">Rashtrotthan Vidya Kendra TAPAS Bengaluru</h2>
                         </div>
                     </div>
                     <div className='shadow-lg shadow-violet-600 bg-gradient-to-br from-[#0a0710] via-[#280c4d] to-[#18032c] backdrop-blur-md rounded-lg w-full sm:w-[600px]'>
                         <div className='text-white text-center flex flex-col gap-2 p-4'>
                             <p>2010 - 2020</p>
                             <h1 className="text-lg font-semibold sm:text-xl">PRIMARY AND HIGH SCHOOL</h1>
-                            <h2 className="text-md font-medium sm:text-lg">Janata Education Society, Harugeri Belagavi</h2>
+                            <h2 className="text-md font-medium sm:text-lg">Janata Education Society Harugeri Belagavi</h2>
                         </div>
                     </div>
                 </div>
