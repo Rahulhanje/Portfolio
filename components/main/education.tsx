@@ -10,7 +10,7 @@ const Education = () => {
     whileInView={{ y: [-35, 0], opacity: [0, 1] }}
     transition={{ duration: 1.2 }}
     id="education"
-    className='sm:pl-0 pl-5'
+    className='sm:pl-0 mx-2'
 > 
 
             <motion.div
