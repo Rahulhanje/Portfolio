@@ -5,6 +5,7 @@ import { IoMdCall } from "react-icons/io";
 import { MdAlternateEmail } from "react-icons/md";
 import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 import { motion } from "framer-motion";
+import { GrResume } from "react-icons/gr";
 
 function Footer() {
     return (
@@ -30,7 +31,10 @@ function Footer() {
                     <div className="flex flex-col gap-3 md:gap-6 font-poppins">
                         <LinkItem icon={<FaInstagram className="text-pink-500 text-lg" />} href="https://www.instagram.com/rahulhanje07/" label="rahulhanje07" />
                         <LinkItem icon={<FaLinkedin className="text-blue-500 text-lg" />} href="https://www.linkedin.com/in/rahul-hanje-b31812252/" label="Rahul Hanje" />
-                        <LinkItem icon={<FaGithub className="text-black text-lg" />} href="https://github.com/Rahulhanje" label="Rahulhanje" />
+                        <LinkItem icon={<FaGithub color="white" className="text-black text-lg" />} href="https://github.com/Rahulhanje" label="Rahulhanje" />
+                        <div className="sm:hidden">
+                        <LinkItem icon={<GrResume  color="white" className="text-black text-lg " />} href="https://drive.google.com/file/d/1cyQbmoy75Acfh3VlueSPGpKSCK_DHlIT/view?usp=sharing" label="Resume" />
+                        </div>
                     </div>
                 </div>
                 <p className="font-bold pt-5">Developed by @Rahul </p>
