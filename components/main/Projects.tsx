@@ -1,9 +1,8 @@
 'use client'
 import React from "react";
-import ProjectCard from "../sub/ProjectCard";
 import { BackgroundGradient } from "../ui/background-gradient";
 import Link from "next/link";
-import { FolderGit2, Link2, Link2Icon } from "lucide-react";
+import { FolderGit2, Link2 } from "lucide-react";
 
 const Projects = () => {
   return (

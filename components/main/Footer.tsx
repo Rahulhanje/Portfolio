@@ -33,6 +33,7 @@ function Footer() {
                         <LinkItem icon={<FaGithub className="text-black text-lg" />} href="https://github.com/Rahulhanje" label="Rahulhanje" />
                     </div>
                 </div>
+                <p className="font-bold pt-5">Developed by @Rahul </p>
             </motion.div>
         </footer>
     );

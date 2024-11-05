@@ -1,6 +1,5 @@
 // import { Socials } from "@/constants";
-import { Socials } from "@/constants";
-import Image from "next/image";
+
 import React from "react";
 
 const Navbar = () => {
@@ -34,6 +33,12 @@ const Navbar = () => {
               About me
             </a>
             <a
+              href="#education"
+              className="cursor-pointer hover:bg-gradient-to-r hover:from-violet-500 hover:to-white hover:text-transparent hover:bg-clip-text"
+            >
+              Education
+            </a>
+            <a
               href="#skills"
               className="cursor-pointer hover:bg-gradient-to-r hover:from-violet-500 hover:to-white hover:text-transparent hover:bg-clip-text"
             >
@@ -51,12 +56,7 @@ const Navbar = () => {
             >
               Contact
             </a>
-            <a
-              href="#education"
-              className="cursor-pointer hover:bg-gradient-to-r hover:from-violet-500 hover:to-white hover:text-transparent hover:bg-clip-text"
-            >
-              Education
-            </a>
+            
 
           </div>
         </div>
