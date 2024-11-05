@@ -22,7 +22,9 @@ export default function RootLayout({
    
         className={`${inter.className} bg-[#030014] overflow-y-scroll overflow-x-hidden`}
       >
-        <StartCanvas/>
+        <div className="absolute inset-0 -z-10">
+          <StartCanvas />
+        </div>
         <div className="hidden sm:block">
         <Navbar/>
         </div>
