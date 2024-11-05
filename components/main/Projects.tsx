@@ -16,7 +16,8 @@ const Projects = () => {
       <div className="h-full w-full flex flex-col md:flex-row gap-10 px-10 justify-center items-center">
         <div className="grid sm:grid-cols-3 grid-cols-1 gap-8">
           <BackgroundGradient >
-            <img src="/linknest.png" alt="Next Website" className="w-full h-full rounded-t-[26px]" />
+
+            <img src="/Linknest.png" alt="Next Website" className="w-full h-full rounded-t-[26px]" />
             <div className=" px-2 py-4 rounded-b-2xl ">
               <p className="font-bold text-xl">LinkNest</p>
               <p>LinkNest is a web application built with React and Appwrite, enabling users to share and discover posts. The application features user authentication, imgs posting, search functionality, and user profiles. It leverages React Query for data fetching and caching, and Tailwind CSS for styling</p>
