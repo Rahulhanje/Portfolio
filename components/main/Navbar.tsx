@@ -1,28 +1,27 @@
 // import { Socials } from "@/constants";
 
+import Link from "next/link";
 import React from "react";
 
 const Navbar = () => {
   return (
     <div className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-10">
       <div className="w-full h-full flex flex-row items-center justify-between m-auto px-[10px]">
-        <a
-          href="#about-me"
-          className="h-auto w-auto flex flex-row items-center"
-        >
-          {/* <Image
-            src="/NavLogo.png"
-            alt="logo"
-            width={70}
-            height={70}
-            className="cursor-pointer hover:animate-slowspin"
-          /> */}
+        <div className="flex ">
+          <a
+            href="#about-me"
+            className="h-auto w-auto flex flex-row items-center"
+          >
 
-          <span className="font-bold ml-[10px] hidden md:block text-gray-300">
-            <p>&lt;Rahul/&gt;</p>
+            <span className="font-bold ml-[10px] hidden md:block text-gray-300">
+              <p>&lt;Rahul/&gt;</p>
+            </span>
+          </a>
+          <Link href={"https://drive.google.com/file/d/1cyQbmoy75Acfh3VlueSPGpKSCK_DHlIT/view?usp=sharing"} passHref >
+            <p className="text-slate-200 pl-5">Resume</p></Link>
 
-          </span>
-        </a>
+        </div>
+
 
         <div className="w-[500px]  h-full flex flex-row items-center justify-between md:mr-20">
           <div className="flex items-center justify-between w-full h-auto    text-gray-200">
@@ -56,7 +55,7 @@ const Navbar = () => {
             >
               Contact
             </a>
-            
+
 
           </div>
         </div>

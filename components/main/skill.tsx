@@ -6,11 +6,15 @@ import Image from 'next/image';
 
 const SkillsNew = () => {
     return (
-        <motion.div id='skills'
-            initial="hidden"
-            animate="visible"
-            className='h-full sm:pb-0 pb-32 w-screen '
-        >
+        <motion.div
+   
+    whileInView={{ y: [-35, 0], opacity: [0, 1] }}
+    transition={{ duration: 1.2 }}
+    id="skills"
+    className='h-full sm:pb-0 pb-48 w-screen  sm:ml-0 ml-5'
+ 
+> 
+
             <h1 className="text-[40px] font-semibold text-center text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-20">
                 Skills
             </h1>

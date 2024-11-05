@@ -3,12 +3,18 @@ import React from "react";
 import { BackgroundGradient } from "../ui/background-gradient";
 import Link from "next/link";
 import { FolderGit2, Link2 } from "lucide-react";
-
+import { motion } from "framer-motion";
 const Projects = () => {
   return (
+    <motion.div
+    className="text-center"
+    whileInView={{ y: [-20, 0], opacity: [0, 1] }}
+    transition={{ duration: 2 }}
+     id="projects"
+> 
     <div
-      className="flex flex-col items-center justify-center py-20"
-      id="projects"
+      className="flex flex-col items-center justify-center py-20 w-full sm:ml-0 ml-5"
+     
     >
       <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-20">
         My Projects
@@ -140,6 +146,7 @@ const Projects = () => {
         /> */}
       </div>
     </div>
+    </motion.div>
   );
 };
 
