@@ -23,7 +23,9 @@ export default function RootLayout({
         className={`${inter.className} bg-[#030014] overflow-y-scroll overflow-x-hidden`}
       >
         <StartCanvas/>
+        <div className="hidden sm:block">
         <Navbar/>
+        </div>
         {children}
       </body>
     </html>

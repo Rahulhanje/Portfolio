@@ -1,4 +1,5 @@
 
+import Education from "@/components/main/education";
 import Footer from "@/components/main/Footer";
 import Hero from "@/components/main/Hero";
 import Projects from "@/components/main/Projects";
@@ -13,6 +14,7 @@ export default function Home() {
     <main className="h-full w-full">
       <div className="flex flex-col  gap-20">
         <Hero />
+        <Education/>
         <SkillsNew />
         <Projects />
         <Footer />

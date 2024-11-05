@@ -15,11 +15,12 @@ const Projects = () => {
       <div className="h-full w-full flex flex-col md:flex-row gap-10 px-10 justify-center items-center">
          <div className="grid sm:grid-cols-3 grid-cols-1 gap-2">
          <BackgroundGradient >
-          <img  src="/NextWebsite.png" alt="Next Website" className="w-full h-full rounded-[26px]" />
+          <img  src="/linknest.png" alt="Next Website" className="w-full h-full rounded-[26px]" />
          </BackgroundGradient>
          
          <BackgroundGradient >
           <img  src="/NextWebsite.png" alt="Next Website" className="w-full h-full rounded-[26px]" />
+          <p></p>
          </BackgroundGradient>
          
          <BackgroundGradient >
