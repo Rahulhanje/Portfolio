@@ -17,7 +17,7 @@ const Navbar = () => {
             </span>
           </a>
           <Link href={"https://drive.google.com/file/d/1cyQbmoy75Acfh3VlueSPGpKSCK_DHlIT/view?usp=sharing"} passHref>
-            <p className="hover:from-violet-500 hover:to-white hover:text-transparent hover:bg-clip-text pl-5">Resume</p>
+            <p className=" text-slate-300 hover:bg-gradient-to-r hover:from-violet-500 hover:to-white hover:text-transparent hover:bg-clip-text pl-5">Resume</p>
           </Link>
         </div>
 
