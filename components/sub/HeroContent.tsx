@@ -26,7 +26,7 @@ const HeroContent = () => (
                 variants={slideInFromLeft(0.8)}
                 className="text-lg text-gray-400 my-5 max-w-[600px] -z-10"
             >
-                I&apos;m a full stack developer with a passion for building scalable and efficient web applications.
+                I am full stack developer from India, I am passionate about designing and building scalable, high-performance web applications. With expertise across front-end and back-end technologies.
             </motion.p>
         </div>
 
