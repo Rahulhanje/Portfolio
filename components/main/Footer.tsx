@@ -9,7 +9,8 @@ import { GrResume } from "react-icons/gr";
 
 function Footer() {
     return (
-        <footer id="contact" className="bg-[#1011238f]  text-gray-300 py-8 border-t border-[#25213b4e] flex flex-col justify-center items-center sm:w-screen w-[430px]">
+        <footer id="contact" className="bg-[#1011238f]  text-gray-300 py-8 border-t border-[#25213b4e] flex flex-col justify-center items-center sm:w-screen w-[390px]">
+            
             <motion.div
                 className="text-center"
                 whileInView={{ y: [-20, 0], opacity: [0, 1] }}
@@ -36,8 +37,8 @@ function Footer() {
                         <LinkItem icon={<GrResume  color="white" className="text-black text-lg " />} href="https://drive.google.com/file/d/1cyQbmoy75Acfh3VlueSPGpKSCK_DHlIT/view?usp=sharing" label="Resume" />
                         </div>
                     </div>
-                </div>
-                <p className="font-bold pt-5">Developed by @Rahul </p>
+                </div> 
+                <p className="font-semibold pt-5">Designed & Developed by ✨ @Rahul ✨</p>
             </motion.div>
         </footer>
     );
