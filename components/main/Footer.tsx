@@ -9,7 +9,7 @@ import { GrResume } from "react-icons/gr";
 
 function Footer() {
     return (
-        <footer id="contact" className="bg-[#1011238f]  text-gray-300 py-8 border-t border-[#25213b4e] flex flex-col justify-center items-center sm:w-screen w-[390px]">
+        <footer id="contact" className="bg-[#1011238f] text-gray-300 py-8 border-t border-[#25213b4e] flex flex-col justify-center items-center sm:w-screen w-[390px]">
             
             <motion.div
                 className="text-center"
@@ -34,7 +34,7 @@ function Footer() {
                         <LinkItem icon={<FaLinkedin className="text-blue-500 text-lg" />} href="https://www.linkedin.com/in/rahul-hanje-b31812252/" label="Rahul Hanje" />
                         <LinkItem icon={<FaGithub color="white" className="text-black text-lg" />} href="https://github.com/Rahulhanje" label="Rahulhanje" />
                         <div className="sm:hidden">
-                        <LinkItem icon={<GrResume  color="white" className="text-black text-lg " />} href="https://drive.google.com/file/d/1cyQbmoy75Acfh3VlueSPGpKSCK_DHlIT/view?usp=sharing" label="Resume" />
+                            <LinkItem icon={<GrResume color="white" className="text-black text-lg" />} href="https://drive.google.com/file/d/1cyQbmoy75Acfh3VlueSPGpKSCK_DHlIT/view?usp=sharing" label="Resume" />
                         </div>
                     </div>
                 </div> 
@@ -45,17 +45,17 @@ function Footer() {
 }
 
 const ContactItem = ({ icon, label }: { icon: JSX.Element; label: string }) => (
-    <div className="flex items-center bg-[#1a1a2e] rounded-lg p-3 hover:bg-[#23233d] shadow-md transform hover:scale-105 transition duration-300 ease-in-out">
+    <div className="flex items-center justify-center bg-[#1a1a2e] rounded-lg p-3 hover:bg-[#23233d] shadow-md transform hover:scale-105 transition duration-300 ease-in-out">
         {icon}
-        <p className="text-sm font-bold ml-2">{label}</p>
+        <p className="text-sm font-bold ml-2 text-center">{label}</p>
     </div>
 );
 
 const LinkItem = ({ icon, href, label }: { icon: JSX.Element; href: string; label: string }) => (
     <Link href={href} passHref legacyBehavior>
-        <a target="_blank" rel="noopener noreferrer" className="flex items-center bg-[#1a1a2e] rounded-lg p-3 hover:bg-[#23233d] shadow-md transform hover:scale-105 transition duration-300 ease-in-out">
+        <a target="_blank" rel="noopener noreferrer" className="flex items-center justify-center bg-[#1a1a2e] rounded-lg p-3 hover:bg-[#23233d] shadow-md transform hover:scale-105 transition duration-300 ease-in-out">
             {icon}
-            <p className="text-sm font-bold ml-2">{label}</p>
+            <p className="text-sm font-bold ml-2 text-center">{label}</p>
         </a>
     </Link>
 );
