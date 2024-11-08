@@ -31,7 +31,7 @@ const Projects = () => {
                 <div className="px-4 py-4 flex-1 flex flex-col text-left">
                   <p className="font-bold text-xl mb-2">LinkNest</p>
                   <p className="text-sm md:text-base flex-1">
-                    LinkNest is a web application built with React and Appwrite, enabling users to share and discover posts. The application features user authentication, img posting, search functionality, and user profiles. It leverages React Query for data fetching and caching, and Tailwind CSS for styling.
+                    LinkNest is a social platform where users can share posts and discover content from others. Built with React and Appwrite, it includes features like authentication, post uploads, search, and user profiles. React Query handles data caching, and Tailwind CSS enhances styling.
                   </p>
                   <div className="flex gap-5 pt-4">
                     <Link href="https://github.com/Rahulhanje/LinkNest.git">
@@ -60,7 +60,7 @@ const Projects = () => {
                 <div className="px-4 py-4 flex-1 flex flex-col text-left">
                   <p className="font-bold text-xl mb-2">Feedbackhub</p>
                   <p className="text-sm md:text-base flex-1">
-                    Users can create projects and receive embeddable codes to integrate into their websites, while managing user subscriptions and viewing project instructions. The feedback system allows visitors to submit ratings, which can be easily managed and sorted in the dashboard.
+                    Feedbackhub lets users create projects, get embeddable codes for easy integration, and manage ratings and feedback. It includes a dashboard for monitoring feedback, subscriptions, and ratings management.
                   </p>
                   <div className="flex gap-5 pt-4">
                     <Link href="https://github.com/Rahulhanje/feedbackHub.git">
@@ -89,7 +89,7 @@ const Projects = () => {
                 <div className="px-4 py-4 flex-1 flex flex-col text-left">
                   <p className="font-bold text-xl mb-2">Solana Dapp</p>
                   <p className="text-sm md:text-base flex-1">
-                    This project is a Solana DApp built with Next.js, Tailwind CSS, and Solana Web3.js, enabling users to interact with the Solana blockchain by sending and receiving tokens and viewing their balances.
+                    A decentralized application (DApp) built on Solana, allowing users to send and receive tokens and view their balances. Developed with Next.js, Tailwind CSS, and Solana Web3.js for a smooth blockchain interaction.
                   </p>
                   <div className="flex gap-5 pt-4">
                     <Link href="https://github.com/Rahulhanje/Wallet_Adapter.git">
@@ -116,9 +116,9 @@ const Projects = () => {
                   className="w-full aspect-video object-cover rounded-t-[26px]" 
                 />
                 <div className="px-4 py-4 flex-1 flex flex-col text-left">
-                  <p className="font-bold text-xl mb-2">SolanaWalletGenerator</p>
+                  <p className="font-bold text-xl mb-2">Solana Wallet Generator</p>
                   <p className="text-sm md:text-base flex-1">
-                    This project is a wallet application built with Next.js, designed for managing digital assets. It includes features such as wallet creation for generating and managing secure wallets.
+                    This wallet application allows users to securely create and manage their digital assets. Developed using Next.js, it supports wallet creation and includes secure key management.
                   </p>
                   <div className="flex gap-5 pt-4">
                     <Link href="https://www.instagram.com/_sagar0418/">
@@ -147,7 +147,7 @@ const Projects = () => {
                 <div className="px-4 py-4 flex-1 flex flex-col text-left">
                   <p className="font-bold text-xl mb-2">Daily Blogging Application</p>
                   <p className="text-sm md:text-base flex-1">
-                    This project is a full-stack blog application that utilizes React for the frontend and Node.js with Prisma ORM for the backend, allowing users to create, read, update, and delete blog posts.
+                    A full-stack blog application where users can create, edit, and manage posts. Built with React for the frontend and Node.js with Prisma ORM for efficient backend operations.
                   </p>
                   <div className="flex gap-5 pt-4">
                     <Link href="https://github.com/Rahulhanje/Daily-Bloging-Application.git">
