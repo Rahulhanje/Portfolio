@@ -19,9 +19,9 @@ export default function About() {
       id="about"
     >
       {/* Globe Background */}
-      <div className="absolute top-0 w-full h-full opacity-90">
+      {/* <div className="absolute top-0 w-full h-full opacity-90">
         <GlobeDemo />
-      </div>
+      </div> */}
 
       {/* Content */}
       <div className="relative pt-10">
