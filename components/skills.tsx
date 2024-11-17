@@ -6,6 +6,14 @@ import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
 
 const categorizedSkills = {
+  "Languages":[
+    "C",
+    "C++",
+    "Java",
+    "Python",
+    "JavaScript",
+    "TypeScript",
+  ],
   "Frontend Technologies": [
     "HTML",
     "CSS",
@@ -20,13 +28,16 @@ const categorizedSkills = {
     "Node.js",
     "Express.js",
     "Prisma",
+    "Hono",
   
   ],
-  "Databases & ORM": ["MongoDB", "PostgreSQL", "MySQL"],
+  "Databases & ORM": ["MongoDB", "PostgreSQL", "MySQL","Supabase"],
   "DevOps & Tools": [
     "Git",
+    "GitHub",
     "Docker",
     "Vercel",
+    "Vscode",
     
   ],
   "Other Tools & Skills": [
