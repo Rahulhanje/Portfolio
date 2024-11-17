@@ -1,6 +1,5 @@
 import Link from "next/link";
 import React from "react";
-import { BsGithub, BsTwitter } from "react-icons/bs";
 
 export default function Footer() {
   return (

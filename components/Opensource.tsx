@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import { BackgroundGradient } from "./ui/card";
-import { IconAppWindow } from "@tabler/icons-react";
 import Link from "next/link";
 import { LuGitPullRequest } from "react-icons/lu";
 import { BsBug } from "react-icons/bs";
