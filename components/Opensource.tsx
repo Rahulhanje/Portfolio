@@ -19,8 +19,8 @@ export function Opensource() {
         codebase.View Pull Request
         </p>
         <div className="flex gap-5 pt-5"> 
-        <Link href={"https://github.com/processing/processing-website/issues/544"}><BsBug size={28}/></Link>
-        <Link href={"https://github.com/processing/processing-website/pull/550"}><LuGitPullRequest size={28}/></Link>
+        <Link href={"https://github.com/processing/processing-website/issues/544"}><BsBug size={24} className="hover:scale-125 transition-transform duration-300 ease-in-out"/></Link>
+        <Link href={"https://github.com/processing/processing-website/pull/550"}><LuGitPullRequest size={24} className="hover:scale-125 transition-transform duration-300 ease-in-out"/></Link>
         
         </div>
       </BackgroundGradient>

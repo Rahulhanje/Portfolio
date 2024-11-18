@@ -45,6 +45,15 @@ export default function Project({
           >
             {title}
           </Link>
+          {/* image only looks in smaller devices project image*/}
+          <Image
+            src={imageUrl}
+            alt="Project I worked on"
+            className="py-4 sm:hidden hover:scale-105 transition-transform duration-300 ease-in-out"
+            quality={95}
+          />
+
+
           <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
             {description}
           </p>
@@ -82,12 +91,13 @@ export default function Project({
           group-even:group-hover:rotate-2
           group-even:right-[initial] group-even:-left-40 "
         />
+
       </section>
     </motion.div>
   );
 }
 
-export function CreateProject({}) {
+export function CreateProject({ }) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -103,8 +113,9 @@ export function CreateProject({}) {
         scale: scaleProgess,
         opacity: opacityProgess,
       }}
+      className="h-[200px]"
     >
-      <section className="bg-gray-100 group flex flex-col gap-2 items-center justify-center max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem] hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-gray-500/10 dark:hover:bg-white/5">
+      <section className="bg-gray-100 group flex flex-col gap-2 items-center h-full justify-center max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem] hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-gray-500/10 dark:hover:bg-white/5">
         <Meteors />
         <h1 className="text-black dark:text-white text-lg">Adding soon...</h1>
         <Link

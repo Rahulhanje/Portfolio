@@ -126,10 +126,10 @@ const timelineData: TimelineEntry[] = [
     title: "2022-Present",
     content: (
       <div className="flex flex-col gap-2">
-        <div className="text-xl bg-gradient-to-r from-teal-400 via-purple-500 to-pink-500 text-transparent bg-clip-text">
+        <div className="text-md text-slate-500 font-bold">
           B.E IN INFORMATION SCIENCE AND ENGINEERING
         </div>
-        <div className="font-bold text-3xl bg-gradient-to-r from-blue-500 via-violet-500 to-slate-500 text-transparent bg-clip-text">
+        <div className="font-bold text-3xl  text-slate-700">
           Don Bosco Institute of Technology Bangalore
         </div>
       </div>
@@ -139,10 +139,10 @@ const timelineData: TimelineEntry[] = [
     title: "2020 - 2022",
     content: (
       <div className="flex flex-col gap-2">
-        <div className="text-xl bg-gradient-to-r from-teal-400 via-purple-500 to-pink-500 text-transparent bg-clip-text">
+        <div className="text-md text-slate-400 font-bold">
           PRE UNIVERSITY COURSE
         </div>
-        <div className="font-bold text-3xl bg-gradient-to-r from-blue-500 via-violet-500 to-slate-500 text-transparent bg-clip-text">
+        <div className="font-bold text-3xl  text-slate-700">
           Rashtrotthan Vidya Kendra TAPAS Bengaluru
         </div>
       </div>
@@ -152,10 +152,10 @@ const timelineData: TimelineEntry[] = [
     title: "2010 - 2020",
     content: (
       <div className="flex flex-col gap-2">
-        <div className="text-xl bg-gradient-to-r from-teal-400 via-purple-500 to-pink-500 text-transparent bg-clip-text">
+        <div className="text-md text-slate-400 font-bold">
           PRIMARY AND HIGH SCHOOL
         </div>
-        <div className="font-bold text-3xl bg-gradient-to-r from-blue-500 via-violet-500 to-slate-500 text-transparent bg-clip-text">
+        <div className="font-bold text-3xl text-slate-700">
           Janata Education Society Harugeri Belagavi.
         </div>
       </div>
