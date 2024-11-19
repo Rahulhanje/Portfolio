@@ -117,10 +117,11 @@ export default function Intro() {
 
 export function GridBackground({ children }: { children: ReactNode }) {
   return (
-    <div className="h-[60rem] w-full dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative flex items-center justify-center">
-      {/* Radial gradient for the container to give a faded look */}
+    <div className="h-[60rem] w-full relative flex items-center justify-center dark:bg-[radial-gradient(circle,rgba(255,255,255,0.2)_1px,transparent_1px)] bg-[radial-gradient(circle,rgba(0,0,0,0.2)_1px,transparent_1px)] bg-[length:20px_20px]">
+      {/* Radial gradient for the container to give a faded look */} 
       <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
       {children}
     </div>
+
   );
 }
