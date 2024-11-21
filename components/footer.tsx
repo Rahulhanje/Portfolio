@@ -1,11 +1,26 @@
-import Link from "next/link";
-import React from "react";
+'use client'
+import React, { useEffect, useState } from "react";
 
 export default function Footer() {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    // Retrieve the count from localStorage
+    const storedCount = localStorage.getItem("visitorCount");
+    const currentCount = storedCount ? parseInt(storedCount, 10) : 0;
+
+    // Increment the count and save it back to localStorage
+    const newCount = currentCount + 1;
+    localStorage.setItem("visitorCount", newCount.toString()); // Convert number to string
+
+    // Update the state with the new count
+    setCount(newCount);
+  }, []);
+
   return (
     <footer className="px-4 text-center border-t border-slate-800 text-gray-400 py-3">
       <div className="max-w-5xl mx-auto flex justify-between">
-        <small className="mb-2 block text-sm text-gray-800 dark:text-gray-100 ">
+        <small className="mb-2 block text-sm text-gray-800 dark:text-gray-100">
           &copy; 2024 Rahul Sanjeevkumar Hanje
         </small>
         {/* <div className="flex items-center gap-3">
@@ -24,6 +39,7 @@ export default function Footer() {
             <BsGithub />
           </Link>
         </div> */}
+        <div>{count}</div>
       </div>
     </footer>
   );
