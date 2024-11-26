@@ -42,8 +42,10 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
   });
 
   return (
-    <div 
+    <section
       id="education"
+    >
+      <div 
       className="w-full font-sans md:px-10 pb-8 relative"
       ref={containerRef}
     >
@@ -117,6 +119,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
         </motion.div>
       </div>
     </div>
+    </section>
   );
 };
 

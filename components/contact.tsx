@@ -1,6 +1,6 @@
 "use client";
 
-import React, { use, useEffect, useRef } from "react";
+import React, {useRef } from "react";
 import SectionHeading from "./section-heading";
 import Link from "next/link";
 import { CiLocationOn } from "react-icons/ci";

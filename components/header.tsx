@@ -1,5 +1,4 @@
 "use client";
-
 import React from "react";
 import { motion } from "framer-motion";
 import { links } from "@/lib/data";
@@ -12,9 +11,9 @@ export default function Header() {
     useActiveSectionContext();
 
   return (
-    <header className="z-[999] relative w-screen ">
+    <header className="z-[999] relative w-screen">
       <motion.div
-        className="fixed top-0 left-1/2 h-[5.2rem] w-full rounded-none border border-white border-opacity-40 bg-white bg-opacity-80  text-center shadow-lg shadow-gray-100 dark:shadow-black backdrop-blur-[0.5rem] sm:top-6  sm:h-[3.35rem] sm:w-[48rem] sm:rounded-full dark:bg-black dark:border-black/40 dark:bg-opacity-75"
+        className="fixed top-0 left-1/2 h-[5.2rem] w-full rounded-none border border-white border-opacity-40 bg-white bg-opacity-80 text-center shadow-lg shadow-gray-100 dark:shadow-black backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.35rem] sm:w-[48rem] sm:rounded-full dark:bg-black dark:border-black/40 dark:bg-opacity-75"
         initial={{ y: -100, x: "-50%", opacity: 0 }}
         animate={{ y: 0, x: "-50%", opacity: 1 }}
       ></motion.div>
@@ -32,18 +31,18 @@ export default function Header() {
                 className={clsx(
                   "relative flex items-center justify-center px-4 py-2 rounded-full transition dark:hover:text-gray-300 hover:text-gray-950",
                   {
-                    "dark:text-white text-black": activeSection === link.name,
+                    "dark:text-white text-black": activeSection == link.name,
                   }
                 )}
                 href={link.hash}
                 onClick={() => {
-                  setActiveSection(link.name);
+                  setActiveSection(link.name); // Ensure exact match
                   setTimeOfLastClick(Date.now());
                 }}
               >
                 {link.name}
 
-                {link.name === activeSection && (
+                {link.name == activeSection && (
                   <motion.span
                     className="absolute inset-0 bg-black/5 dark:bg-white/10 rounded-full -z-10"
                     layoutId="activeSection"

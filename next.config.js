@@ -2,6 +2,7 @@
 const nextConfig = {
   output: 'standalone',
   images: {
+    domains: ['lottie.host'],
     remotePatterns: [
       {
         protocol: "https",

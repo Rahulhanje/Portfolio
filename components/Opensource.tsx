@@ -7,7 +7,7 @@ import { BsBug } from "react-icons/bs";
 
 export function Opensource() {
   return (
-    <div className="py-5" id="experince">
+    <div className="sm:py-15 py-10" id="experince">
         <p className="text-3xl font-medium capitalize mb-8 text-center">Open Source Contribution</p>
       <BackgroundGradient className="rounded-[22px] max-w-sm p-4 sm:p-10 bg-white dark:bg-zinc-900">
         <p className="text-base sm:text-xl text-black mt-4 mb-2 dark:text-neutral-200">
