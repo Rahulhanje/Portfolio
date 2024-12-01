@@ -61,8 +61,6 @@ export default function Intro() {
               { text: "Hello, I'm Rahul.", className: "font-bold" },
               { text: "I'm a", className: "" },
               { text: "full-stack developer", className: "font-bold" },
-              { text: "My focus is", className: "" },
-              { text: "React (Next.js)", className: "underline" },
             ]}
           />
         </motion.h1>
