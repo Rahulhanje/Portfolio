@@ -11,6 +11,7 @@ import SectionDivider from "@/components/section-divider";
 import Skills from "@/components/skills";
 
 
+
 export default function Home() {
   return (
 
@@ -21,7 +22,7 @@ export default function Home() {
       {/* </GridBackground> */}
       <Education/>
       <Skills />
-
+     
       <Projects />
 
       <Opensource/>

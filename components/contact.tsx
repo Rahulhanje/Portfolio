@@ -12,12 +12,14 @@ import { GrResume } from "react-icons/gr";
 import { useSectionInView } from "@/lib/hooks";
 import Player from "lottie-react";
 import contact from "../public/contact.json";
+import { BackgroundBeamsWithCollision } from "./ui/background-beams-with-collision";
 
 export default function Contact() {
   const { ref } = useSectionInView("Contact");
   const formRef = useRef<HTMLFormElement>(null);
 
   return (
+    <BackgroundBeamsWithCollision className="pt-32">
     <motion.section
       id="contact"
       ref={ref}
@@ -108,6 +110,7 @@ export default function Contact() {
         </div>
       </div>
     </motion.section>
+    </BackgroundBeamsWithCollision>
   );
 }
 

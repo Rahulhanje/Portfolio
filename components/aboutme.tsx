@@ -10,6 +10,7 @@ import { MdOutlineSportsHandball } from 'react-icons/md';
 
 const AboutMe: React.FC = () => {
     return (
+       
         <motion.section
             id="about"
             initial={{ opacity: 0, y: 50 }}
@@ -107,6 +108,7 @@ const AboutMe: React.FC = () => {
 
 
         </motion.section>
+        
     );
 };
 
