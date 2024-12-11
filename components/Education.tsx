@@ -158,7 +158,7 @@ const timelineData: TimelineEntry[] = [
         <div className="text-md text-slate-400 font-bold">
           PRIMARY AND HIGH SCHOOL
         </div>
-        <div className="font-bold text-3xltext-slate-800 dark:text-slate-400">
+        <div className="font-bold text-3xl text-slate-800 dark:text-slate-400">
           Janata Education Society Harugeri Belagavi.
         </div>
       </div>

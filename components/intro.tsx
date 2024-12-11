@@ -12,6 +12,7 @@ import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import { TypewriterEffect } from "./ui/typewriter-effect";
 
+
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
@@ -56,6 +57,7 @@ export default function Intro() {
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
         >
+
           <TypewriterEffect
             words={[
               { text: "Hello, I'm Rahul.", className: "font-bold" },

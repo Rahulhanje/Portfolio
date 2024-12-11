@@ -3,7 +3,7 @@ import AboutMe from "@/components/aboutme";
 
 import Contact from "@/components/contact";
 import Education from "@/components/Education";
-import Experience from "@/components/experience";
+
 import { GridBackground } from "@/components/intro";
 import {Opensource} from "@/components/Opensource";
 import Projects from "@/components/projects";

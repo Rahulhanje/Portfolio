@@ -4,6 +4,7 @@ import React from "react";
 import SectionHeading from "./section-heading";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
+import { BackgroundGradientAnimation } from "./ui/gradientbg";
 
 const categorizedSkills = {
   "Languages":[
@@ -64,7 +65,7 @@ export default function Skills() {
       id="skills"
       ref={ref}
       className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40"
-    >
+    > 
       <SectionHeading>My Skills</SectionHeading>
       {Object.entries(categorizedSkills).map(
         ([category, skills], categoryIndex) => (
