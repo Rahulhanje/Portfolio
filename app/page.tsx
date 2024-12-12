@@ -18,6 +18,9 @@ export default function Home() {
     <main className="flex flex-col items-center px-4">
       {/* <SectionDivider /> */}
       {/* <GridBackground> */}
+      <div className="absolute top-12 left-12 w-96 h-96 bg-blue-800 rounded-full filter blur-[120px] opacity-40" />
+      <div className="absolute  right-0 w-96 h-96 bg-blue-800 rounded-full filter blur-[100px] opacity-40" />
+      {/* <div className="absolute top-20 right-20 w-72 h-72 bg-blue-400/30 dark:bg-none rounded-full filter blur-2xl" /> */}
       <AboutMe/>
       {/* </GridBackground> */}
       <Education/>
