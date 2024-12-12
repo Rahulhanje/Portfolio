@@ -14,6 +14,7 @@ const nextConfig = {
     serverActions: true,
     outputStandalone: true,
   },
+  output: 'standalone',
 };
 
 module.exports = nextConfig;

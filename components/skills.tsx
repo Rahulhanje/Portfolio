@@ -4,7 +4,6 @@ import React from "react";
 import SectionHeading from "./section-heading";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
-import { BackgroundGradientAnimation } from "./ui/gradientbg";
 
 const categorizedSkills = {
   "Languages":[
