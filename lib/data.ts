@@ -86,64 +86,51 @@ export const projectsData = [
   },
 ] as const;
 
-export const skillsData = [
-  // Frontend Technologies
-  "HTML",
-  "CSS",
-  "Sass",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Redux",
-  "Zustand",
-  "Tailwind CSS",
-  "Framer Motion",
-  "Bootstrap",
-  "Chakra UI",
+export interface SkillsData {
+  [key: string]: string[];
+}
 
-  // Backend Technologies
-  "Node.js",
-  "Express.js",
-  "NestJS",
-  "Apollo Server",
-  "Prisma",
-  "GraphQL",
-  "REST API",
-  "Kafka",
-
-  // Databases & ORM
-  "MongoDB",
-  "PostgreSQL",
-  "Redis",
-
-  // DevOps & Tools
-  "Git",
-  "Docker",
-  "CI/CD Pipelines",
-  "GitHub Actions",
-  "Jenkins",
-  "Bash Scripting",
-  "Linux",
-  "Nginx",
-  "AWS (EC2, S3)",
-  "Vercel",
-  "Grafana",
-
-  // Monitoring & Logging
-  "Prometheus",
-  "Grafana",
-
-  // Testing & Linting
-  "Jest",
-  "Cypress",
-  "ESLint",
-  "Prettier",
-
-  // Other Tools & Skills
-  "Figma",
-  "Postman",
-  "Webpack",
-] as const;
-
-
+export const categorizedSkills: SkillsData = {
+  "Languages": [
+    "C",
+    "C++",
+    "Java",
+    "Python",
+    "JavaScript",
+    "TypeScript",
+  ],
+  "Frontend Technologies": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "TypeScript",
+    "React",
+    "Next.js",
+    "Tailwind CSS",
+    "Framer Motion",
+  ],
+  "Backend Technologies": [
+    "Node.js",
+    "Express.js",
+    "Prisma",
+    "Hono",
+  ],
+  "Databases & ORM": [
+    "MongoDB",
+    "PostgreSQL",
+    "MySQL",
+    "Supabase"
+  ],
+  "DevOps & Tools": [
+    "Git",
+    "GitHub",
+    "Docker",
+    "Vercel",
+    "Vscode",
+  ],
+  "Other Tools & Skills": [
+    "Postman",
+    "Vite",
+    "npm",
+  ],
+};
