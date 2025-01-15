@@ -11,6 +11,7 @@ import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import { TypewriterEffect } from "./ui/typewriter-effect";
+import { BackgroundLines } from "./ui/BackgroundLines ";
 
 
 export default function Intro() {
@@ -31,6 +32,7 @@ export default function Intro() {
   }
 
   return (
+    <BackgroundLines className="flex items-center justify-center w-full flex-col px-4 h-s">
     <section
       ref={ref}
       id="home"
@@ -117,6 +119,7 @@ export default function Intro() {
         </motion.div>
       </div>
     </section>
+    </BackgroundLines>
   );
 }
 
