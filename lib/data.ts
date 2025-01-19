@@ -3,6 +3,8 @@ import Feedbackhub from "@/public/Feedbackhub.png";
 import SolanaDap from "@/public/SolanaDap.png";
 import solanaWalletgenerator from '@/public/solanaWalletgenerator.png';
 import Linknest from '@/public/Linknest.png'
+import tweetnest from '@/public/tweetnest.png'
+
 export const links = [
   {
     name: "Home",
@@ -47,6 +49,7 @@ export const experiencesData = [
   },
   // More objects...
 ];
+
 export const projectsData = [
   {
     title: "Feedbackhub",
@@ -83,6 +86,15 @@ export const projectsData = [
     imageUrl: solanaWalletgenerator,
     githubUrl: "https://github.com/Rahulhanje/SolanaWalletGenerator",
     demoUrl: "https://solana-wallet-generator-ashy.vercel.app/",
+  },
+  {
+    title: "tweetnest",
+    description:
+      "This project is about a social media platform. Together, they provide functionalities like user authentication, post management, notifications, and user profile management.",
+    tags: ["Node.js","Express.js", "MongoDB", "React", "React Query", "Tailwind","JWT","DaisyUI"],
+    imageUrl: tweetnest,
+    githubUrl: "https://github.com/Rahulhanje/TweetNest",
+    demoUrl: "https://tweetnest-f6uc.onrender.com/",
   },
 ] as const;
 

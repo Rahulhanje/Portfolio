@@ -33,10 +33,10 @@ export default function Project({
         scale: scaleProgess,
         opacity: opacityProgess,
       }}
-      className="group "
+      className="group min-h-[20rem]"
     >
-      <section className="bg-gray-100 group max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[24rem] hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-gray-500/10 dark:hover:bg-white/5">
-        <Meteors number={40} className=" group-hover:hidden block" />{" "}
+      <section className="bg-gray-100 group w-full max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative min-h-[20rem] h-full hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-gray-500/10 dark:hover:bg-white/5">
+        <Meteors number={40} className="group-hover:hidden block" />
         <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
           <Link
             target="_blank"
@@ -45,7 +45,7 @@ export default function Project({
           >
             {title}
           </Link>
-          {/* image only looks in smaller devices project image*/}
+          
           <Image
             src={imageUrl}
             alt="Project I worked on"
@@ -53,51 +53,59 @@ export default function Project({
             quality={95}
           />
 
-
           <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
             {description}
           </p>
-          <ul className="flex flex-wrap gap-2 mt-4 sm:mt-auto py-2">
-            {tags.map((tag, index) => (
-              <li
-                className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
-                key={index}
-              >
-                {tag}
-              </li>
-            ))}
-          </ul>
-          <div className="flex gap-2 mt-auto">
-            <Link href={demoUrl} target="_blank">
-              <button className="px-3 py-1 bg-black text-gray-100 dark:bg-white/5 dark:hover:border-gray-500 border border-gray-900    rounded-2xl">
-                Demo
-              </button>
-            </Link>
+          
+          <div className="mt-auto">
+            <ul className="flex flex-wrap gap-2 py-2">
+              {tags.map((tag, index) => (
+                <li
+                  className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
+                  key={index}
+                >
+                  {tag}
+                </li>
+              ))}
+            </ul>
+            
+            <div className="flex gap-2 mt-4">
+              <Link href={demoUrl} target="_blank">
+                <button className="px-3 py-1 bg-black text-gray-100 dark:bg-white/5 dark:hover:border-gray-500 border border-gray-900 rounded-2xl">
+                  Demo
+                </button>
+              </Link>
 
-            <Link href={githubUrl} target="_blank">
-              <button className="px-3 py-1 text-black dark:text-gray-200 dark:hover:border-gray-500 border border-gray-300 hover:border-gray-400 dark:border-gray-600  rounded-2xl">
-                Github
-              </button>
-            </Link>
+              <Link href={githubUrl} target="_blank">
+                <button className="px-3 py-1 text-black dark:text-gray-200 dark:hover:border-gray-500 border border-gray-300 hover:border-gray-400 dark:border-gray-600 rounded-2xl">
+                  Github
+                </button>
+              </Link>
+            </div>
           </div>
         </div>
+        
         <Image
           src={imageUrl}
           alt="Project I worked on"
           quality={95}
-          className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl transition group-hover:scale-[1.04] group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2
-          group-even:group-hover:translate-x-3
-          group-even:group-hover:translate-y-3
-          group-even:group-hover:rotate-2
-          group-even:right-[initial] group-even:-left-40 "
+          className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl transition 
+            group-hover:scale-[1.04] 
+            group-hover:-translate-x-3 
+            group-hover:translate-y-3 
+            group-hover:-rotate-2
+            group-even:group-hover:translate-x-3
+            group-even:group-hover:translate-y-3
+            group-even:group-hover:rotate-2
+            group-even:right-[initial] 
+            group-even:-left-40"
         />
-
       </section>
     </motion.div>
   );
 }
 
-export function CreateProject({ }) {
+export function CreateProject() {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -113,15 +121,15 @@ export function CreateProject({ }) {
         scale: scaleProgess,
         opacity: opacityProgess,
       }}
-      className="h-[200px]"
+      className="group min-h-[20rem]"
     >
-      <section className="bg-gray-100 group flex flex-col gap-2 items-center h-full justify-center max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem] hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-gray-500/10 dark:hover:bg-white/5">
+      <section className="bg-gray-100 group flex flex-col gap-2 items-center justify-center w-full max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative min-h-[20rem] h-full hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-gray-500/10 dark:hover:bg-white/5">
         <Meteors />
         <h1 className="text-black dark:text-white text-lg">Adding soon...</h1>
         <Link
           href={"https://github.com/Rahulhanje"}
           target="_blank"
-          className=" text-black"
+          className="text-black"
         >
           <Button
             variant={"outline"}
