@@ -19,11 +19,11 @@ export default function Contact() {
   const formRef = useRef<HTMLFormElement>(null);
 
   return (
-    <BackgroundBeamsWithCollision className="pt-32">
+    <BackgroundBeamsWithCollision className="pt-32 dark:bg-[rgb(9,9,9)]">
     <motion.section
       id="contact"
       ref={ref}
-      className="mb-20 sm:mb-28 w-full px-4 text-center"
+      className="mb-20 sm:mb-28 w-full px-4 text-center dark:bg-[rgb(9,9,9)]"
       initial={{
         opacity: 0,
         y: 100,
@@ -37,7 +37,7 @@ export default function Contact() {
       }}
     >
       <SectionHeading>Contact me</SectionHeading>
-      <p className="text-gray-700 dark:text-white/80 py-5 text-sm sm:text-base">
+      <p className=" text-gray-700 dark:text-white/80 py-5 text-sm sm:text-base">
             Please contact me directly at{" "}
             <a
               className="underline text-blue-500 hover:text-blue-700 transition"

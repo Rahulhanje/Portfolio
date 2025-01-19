@@ -2,10 +2,11 @@
 import AboutMe from "@/components/aboutme";
 import Contact from "@/components/contact";
 import Education from "@/components/Education";
+import NewSkillsSection from "@/components/newSkillsSection";
 import { Opensource } from "@/components/Opensource";
 import Projects from "@/components/projects";
 import Skills from "@/components/skills";
-import { SkillsSection } from "@/components/SkillsSection";
+
 
 export default function Home() {
   return (
@@ -18,7 +19,8 @@ export default function Home() {
       {/* Components */}
       <AboutMe />
       <Education />
-      <Skills /> 
+      {/* <Skills />  */}
+       <NewSkillsSection/>
       <Projects />
       <Opensource />
       <Contact />
