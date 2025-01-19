@@ -79,7 +79,7 @@ export const projectsData = [
     demoUrl: "https://wallet-adapter-phi.vercel.app/",
   },
   {
-    title: "solanaWalletgenerator",
+    title: "SolanaWalletgenerator",
     description:
       "This wallet application allows users to securely create and manage their digital assets. it supports wallet creation deletion.",
     tags: ["React", "Next.js", "Tailwind"],
@@ -88,7 +88,7 @@ export const projectsData = [
     demoUrl: "https://solana-wallet-generator-ashy.vercel.app/",
   },
   {
-    title: "tweetnest",
+    title: "Tweetnest",
     description:
       "This project is about a social media platform. Together, they provide functionalities like user authentication, post management, notifications, and user profile management.",
     tags: ["Node.js","Express.js", "MongoDB", "React", "React Query", "Tailwind","JWT","DaisyUI"],

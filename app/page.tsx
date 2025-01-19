@@ -16,7 +16,7 @@ export default function Home() {
         <div className="absolute top-12 left-12 w-96 h-96 bg-blue-800 rounded-full filter blur-[120px] opacity-40 sm:top-6 sm:left-6 sm:w-64 sm:h-64 md:w-80 md:h-80" />
         <div className="absolute right-0 w-96 h-96 bg-blue-800 rounded-full filter blur-[100px] opacity-40 sm:w-64 sm:h-64 md:w-80 md:h-80" />
       </div> */}
-      {/* Components */}
+    
       <AboutMe />
       <Education />
       {/* <Skills />  */}
