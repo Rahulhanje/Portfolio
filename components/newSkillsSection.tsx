@@ -1,34 +1,87 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Code2, Database, Globe, Server, Settings, Terminal } from "lucide-react";
-import { useSectionInView } from "@/lib/hooks";
+import { 
+  FaTerminal, FaGlobe, FaServer, FaDatabase, 
+  FaCogs, FaCode, FaPython, FaJava, FaReact, 
+  FaNodeJs, FaDocker, FaGit, FaHtml5, FaCss3, 
+  FaJs, 
+  FaGithubSquare,
+  FaGitAlt
+} from "react-icons/fa";
+import { SiTypescript, SiNextdotjs, SiTailwindcss, SiPrisma, 
+         SiMongodb, SiPostgresql, SiMysql, SiSupabase, 
+         SiVercel, SiPostman, SiVite, 
+         SiNpm, SiExpress, 
+         SiHonor,
+         SiTurborepo} from "react-icons/si";
+
+
+import { TbBrandCpp, TbBrandFramerMotion } from "react-icons/tb";
 import SectionHeading from "./section-heading";
+import { useSectionInView } from "@/lib/hooks";
 
 const skillCategories = {
   "Languages": {
-    icon: <Terminal className="w-6 h-6" />,
-    skills: ["C", "C++", "Java", "Python", "JavaScript", "TypeScript"]
+    icon: <FaTerminal className="w-6 h-6" />,
+    skills: [
+      { name: "C", icon: <FaCode className="w-5 h-5" /> },
+      { name: "C++", icon: <TbBrandCpp   className="w-5 h-5" /> },
+      { name: "Java", icon: <FaJava className="w-5 h-5" /> },
+      { name: "Python", icon: <FaPython className="w-5 h-5" /> },
+      { name: "JavaScript", icon: <FaJs className="w-5 h-5" /> },
+      { name: "TypeScript", icon: <SiTypescript className="w-5 h-5" /> }
+    ]
   },
   "Frontend Technologies": {
-    icon: <Globe className="w-6 h-6" />,
-    skills: ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Next.js", "Tailwind CSS", "Framer Motion"]
+    icon: <FaGlobe className="w-6 h-6" />,
+    skills: [
+      { name: "HTML", icon: <FaHtml5 className="w-5 h-5" /> },
+      { name: "CSS", icon: <FaCss3 className="w-5 h-5" /> },
+      { name: "JavaScript", icon: <FaJs className="w-5 h-5" /> },
+      { name: "TypeScript", icon: <SiTypescript className="w-5 h-5" /> },
+      { name: "React", icon: <FaReact className="w-5 h-5" /> },
+      { name: "Next.js", icon: <SiNextdotjs className="w-5 h-5" /> },
+      { name: "Tailwind CSS", icon: <SiTailwindcss className="w-5 h-5" /> },
+      { name: "Framer Motion", icon: <TbBrandFramerMotion className="w-5 h-5" /> }
+    ]
   },
   "Backend Technologies": {
-    icon: <Server className="w-6 h-6" />,
-    skills: ["Node.js", "Express.js", "Prisma", "Hono"]
+    icon: <FaServer className="w-6 h-6" />,
+    skills: [
+      { name: "Node.js", icon: <FaNodeJs className="w-5 h-5" /> },
+      { name: "Express.js", icon: <SiExpress className="w-5 h-5" /> },
+      { name: "Hono", icon: <SiHonor className="w-5 h-5" /> },
+      { name: "Prisma", icon: <SiPrisma className="w-5 h-5" /> }
+    ]
   },
   "Databases & ORM": {
-    icon: <Database className="w-6 h-6" />,
-    skills: ["MongoDB", "PostgreSQL", "MySQL", "Supabase"]
+    icon: <FaDatabase className="w-6 h-6" />,
+    skills: [
+      { name: "MongoDB", icon: <SiMongodb className="w-5 h-5" /> },
+      { name: "PostgreSQL", icon: <SiPostgresql className="w-5 h-5" /> },
+      { name: "MySQL", icon: <SiMysql className="w-5 h-5" /> },
+      { name: "Supabase", icon: <SiSupabase className="w-5 h-5" /> }
+    ]
   },
   "DevOps & Tools": {
-    icon: <Settings className="w-6 h-6" />,
-    skills: ["Git", "GitHub", "Docker", "Vercel", "VSCode"]
+    icon: <FaCogs className="w-6 h-6" />,
+    skills: [
+      { name: "Git", icon: <FaGitAlt  className="w-5 h-5" /> },
+      { name: "GitHub", icon: <FaGithubSquare className="w-5 h-5" /> },
+      { name: "Docker", icon: <FaDocker className="w-5 h-5" /> },
+      { name: "Vercel", icon: <SiVercel className="w-5 h-5" /> },
+      { name: "VSCode", icon: <FaCode className="w-5 h-5" /> }
+    ]
   },
   "Other Tools & Skills": {
-    icon: <Code2 className="w-6 h-6" />,
-    skills: ["Postman", "Vite", "npm"]
+    icon: <FaCode className="w-6 h-6" />,
+    skills: [
+      { name: "Postman", icon: <SiPostman className="w-5 h-5" /> },
+      { name: "Vite", icon: <SiVite className="w-5 h-5" /> },
+      { name: "Turborepo", icon: <SiTurborepo  className="w-5 h-5" /> },
+      { name: "npm", icon: <SiNpm className="w-5 h-5" /> }
+    ]
   }
 };
 
@@ -77,23 +130,24 @@ export default function Skills() {
               
               <div className="flex flex-wrap gap-2">
                 {skills.map((skill, index) => (
-                  <motion.span
-                    key={skill}
+                  <motion.div
+                    key={skill.name}
                     variants={fadeInAnimationVariants}
                     initial="initial"
                     whileInView="animate"
                     viewport={{ once: true }}
                     custom={index}
                     whileHover={{ scale: 1.05 }}
-                    className="px-3 py-1.5 rounded-md text-sm font-medium 
+                    className="flex items-center gap-2 px-3 py-1.5 rounded-md text-sm font-medium 
                              bg-gray-100 dark:bg-gray-900
                              text-gray-900 dark:text-gray-200
                              transition-all duration-300
                              hover:bg-gray-300 dark:hover:bg-slate-600
                              cursor-pointer"
                   >
-                    {skill}
-                  </motion.span>
+                    {skill.icon}
+                    <span>{skill.name}</span>
+                  </motion.div>
                 ))}
               </div>
             </motion.div>

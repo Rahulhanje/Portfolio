@@ -2,7 +2,7 @@
 const nextConfig = {
   output: 'standalone',
   images: {
-    domains: ['lottie.host'],
+    domains: ['lottie.host','api.microlink.io'],
     remotePatterns: [
       {
         protocol: "https",

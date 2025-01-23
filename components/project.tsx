@@ -7,6 +7,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { Meteors } from "./ui/meteors";
 import Link from "next/link";
 import { Button } from "./ui/button";
+import { LinkPreview } from "./ui/link-preview";
 
 type ProjectProps = (typeof projectsData)[number];
 
@@ -45,7 +46,7 @@ export default function Project({
           >
             {title}
           </Link>
-          
+
           <Image
             src={imageUrl}
             alt="Project I worked on"
@@ -56,7 +57,7 @@ export default function Project({
           <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
             {description}
           </p>
-          
+
           <div className="mt-auto">
             <ul className="flex flex-wrap gap-2 py-2">
               {tags.map((tag, index) => (
@@ -68,13 +69,17 @@ export default function Project({
                 </li>
               ))}
             </ul>
-            
+
             <div className="flex gap-2 mt-4">
-              <Link href={demoUrl} target="_blank">
+
+              <a href={demoUrl} target="_blank" rel="noopener noreferrer" className="text-black dark:text-white font-bold">
                 <button className="px-3 py-1 bg-black text-gray-100 dark:bg-white/5 dark:hover:border-gray-500 border border-gray-900 rounded-2xl">
-                  Demo
+                  
+                    Demo
+                  
                 </button>
-              </Link>
+              </a>
+
 
               <Link href={githubUrl} target="_blank">
                 <button className="px-3 py-1 text-black dark:text-gray-200 dark:hover:border-gray-500 border border-gray-300 hover:border-gray-400 dark:border-gray-600 rounded-2xl">
@@ -84,7 +89,7 @@ export default function Project({
             </div>
           </div>
         </div>
-        
+
         <Image
           src={imageUrl}
           alt="Project I worked on"

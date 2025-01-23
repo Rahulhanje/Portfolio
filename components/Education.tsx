@@ -7,6 +7,7 @@ import {
   motion,
 } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
+import { LinkPreview } from "./ui/link-preview";
 
 interface TimelineEntry {
   title: string;
@@ -133,7 +134,9 @@ const timelineData: TimelineEntry[] = [
           B.E IN INFORMATION SCIENCE AND ENGINEERING
         </div>
         <div className="font-bold text-3xl  text-slate-800 dark:text-slate-400">
+          <LinkPreview url="https://image-static.collegedunia.com/public/college_data/images/appImage/1627723439Screenshot20210731123954.png?h=260&w=360&mode=crop">
           Don Bosco Institute of Technology Bangalore
+          </LinkPreview>
         </div>
       </div>
     ),
@@ -146,7 +149,9 @@ const timelineData: TimelineEntry[] = [
           PRE UNIVERSITY COURSE
         </div>
         <div className="font-bold text-3xl text-slate-800 dark:text-slate-400">
+          <LinkPreview url="https://images.uniapply.com/uploads/college/image/500/3613/Rashtrotthana_Vidya_Kendra_4459_Building_UA_1.jpg">
           Rashtrotthan Vidya Kendra TAPAS Bengaluru
+          </LinkPreview>
         </div>
       </div>
     ),

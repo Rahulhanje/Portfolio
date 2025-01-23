@@ -17,7 +17,7 @@ export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
   const [loading, setLoading] = useState<boolean>(true);
-
+ const [showSecondText, setShowSecondText] = useState(false);
   useEffect(() => {
     setLoading(false);
   }, []);
@@ -61,20 +61,26 @@ export default function Intro() {
               <TypewriterEffect
                 words={[
                   { text: "Hello, I'm Rahul.", className: "font-bold" },
-                  { text: "I'm a", className: "" },
-                  { text: "full-stack developer.", className: "font-bold" },
+                  
+                ]}
+              />
+              <TypewriterEffect
+                words={[
+               
+                  { text: "I'm a full-stack developer.", className: "font-bold" }
                 ]}
               />
             </motion.h1>
 
             <motion.div
-              className="flex flex-col sm:flex-row gap-4 items-center flex-wrap justify-center lg:justify-start"
+              className="flex flex-col  gap-4 items-center flex-wrap justify-center lg:justify-start"
               initial={{ opacity: 0, y: 100 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 }}
             >
               {/* Download Resume Button */}
-              <a
+             <div className="flex flex-col sm:flex-row gap-5">
+             <a
                 className="w-full sm:w-auto flex gap-2 items-center justify-center py-3 px-6 bg-gray-50 rounded-full transition cursor-pointer outline-none active:scale-95 group borderBlack dark:bg-white/10"
                 href="/resume.pdf"
                 target="_blank"
@@ -95,6 +101,7 @@ export default function Intro() {
                 Contact me here
                 <BsArrowRight className="opacity-70 transition group-hover:opacity-95 group-hover:scale-105 group-hover:translate-x-1" />
               </Link>
+             </div>
 
               {/* Social Links */}
               <div className="flex gap-4 justify-center mt-4 sm:mt-0">
@@ -103,7 +110,7 @@ export default function Intro() {
                   href="https://www.linkedin.com/in/rahul-hanje-b31812252/"
                   target="_blank"
                 >
-                  <BsLinkedin className="text-xl transition group-hover:scale-110" />
+                  <BsLinkedin  className="text-xl transition group-hover:scale-110" />
                 </a>
 
                 <a
@@ -111,7 +118,7 @@ export default function Intro() {
                   href="https://github.com/Rahulhanje"
                   target="_blank"
                 >
-                  <FaGithubSquare className="text-xl transition group-hover:scale-110" />
+                  <FaGithubSquare  className="text-xl transition group-hover:scale-110" />
                 </a>
               </div>
             </motion.div>
