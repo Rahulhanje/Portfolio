@@ -59,6 +59,7 @@
   "devDependencies": {
     "@eslint/js": "^9.15.0",
     "@types/nodemailer": "^6.4.16",
+    "@types/react-syntax-highlighter": "^15.5.13",
     "@types/react-vertical-timeline-component": "^3.3.6",
     "@types/three": "^0.170.0",
     "eslint": "^8.57.1",

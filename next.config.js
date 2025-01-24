@@ -2,7 +2,7 @@
 const nextConfig = {
   output: 'standalone',
   images: {
-    domains: ['lottie.host','api.microlink.io'],
+    domains: ['lottie.host', 'api.microlink.io'],
     remotePatterns: [
       {
         protocol: "https",
@@ -11,10 +11,8 @@ const nextConfig = {
     ],
   },
   experimental: {
-    serverActions: true,
-    outputStandalone: true,
+    serverActions: {}, // Replace true with an empty object or configure properly
   },
-  output: 'standalone',
 };
 
 module.exports = nextConfig;
