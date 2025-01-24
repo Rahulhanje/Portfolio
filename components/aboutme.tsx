@@ -8,6 +8,7 @@ import { FaCameraRetro, FaCode, FaMusic } from 'react-icons/fa';
 import { IoLogoGameControllerA } from 'react-icons/io';
 import { MdOutlineSportsHandball } from 'react-icons/md';
 import { LinkPreview } from "@/components/ui/link-preview";
+import SectionHeading from './section-heading';
 
 const AboutMe: React.FC = () => {
     return (
@@ -27,7 +28,7 @@ const AboutMe: React.FC = () => {
                         transition={{ duration: 0.6, delay: 0.3 }}
                         className="text-center mb-8"
                     >
-                        <h1 className="text-3xl md:text-5xl font-bold gradient-text mb-4">About Me</h1>
+                        <SectionHeading>About Me</SectionHeading>
                         <p className="text-base md:text-lg text-gray-600 dark:text-gray-400">Passionate Developer & Tech Enthusiast</p>
                     </motion.div>
 
@@ -87,11 +88,11 @@ const AboutMe: React.FC = () => {
                                 <h2 className="text-xl md:text-2xl font-semibold mb-4 text-gray-800 dark:text-gray-200">Hobbies & Interests</h2>
                                 <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
                                     {[ 
-                                        { icon: FaCode, color: 'blue', label: 'Coding' },
-                                        { icon: IoLogoGameControllerA, color: 'pink', label: 'Gaming' },
-                                        { icon: FaMusic, color: 'indigo', label: 'Music' },
-                                        { icon: FaCameraRetro, color: 'red', label: 'Photography' },
-                                        { icon: MdOutlineSportsHandball, color: 'indigo', label: 'Sports' }
+                                        { icon: FaCode, color: 'text-indigo-500', label: 'Coding' },
+                                        { icon: IoLogoGameControllerA, color: 'text-pink-500', label: 'Gaming' },
+                                        { icon: FaMusic, color: 'text-indigo-500', label: 'Music' },
+                                        { icon: FaCameraRetro, color: 'text-red-500', label: 'Photography' },
+                                        { icon: MdOutlineSportsHandball, color: 'text-indigo-500', label: 'Sports' },
                                     ].map(({ icon: Icon, color, label }, index) => (
                                         <motion.div
                                             key={label}

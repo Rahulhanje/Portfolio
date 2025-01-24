@@ -9,6 +9,7 @@ import {
   FaGithubSquare,
   FaGitAlt
 } from "react-icons/fa";
+
 import { SiTypescript, SiNextdotjs, SiTailwindcss, SiPrisma, 
          SiMongodb, SiPostgresql, SiMysql, SiSupabase, 
          SiVercel, SiPostman, SiVite, 
@@ -17,7 +18,7 @@ import { SiTypescript, SiNextdotjs, SiTailwindcss, SiPrisma,
          SiTurborepo} from "react-icons/si";
 
 
-import { TbBrandCpp, TbBrandFramerMotion } from "react-icons/tb";
+import { TbBrandCpp, TbBrandFramerMotion,TbBrandVscode  } from "react-icons/tb";
 import SectionHeading from "./section-heading";
 import { useSectionInView } from "@/lib/hooks";
 
@@ -71,7 +72,7 @@ const skillCategories = {
       { name: "GitHub", icon: <FaGithubSquare className="w-5 h-5" /> },
       { name: "Docker", icon: <FaDocker className="w-5 h-5" /> },
       { name: "Vercel", icon: <SiVercel className="w-5 h-5" /> },
-      { name: "VSCode", icon: <FaCode className="w-5 h-5" /> }
+      { name: "VSCode", icon: <TbBrandVscode className="w-5 h-5" /> }
     ]
   },
   "Other Tools & Skills": {

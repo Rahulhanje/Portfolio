@@ -39,13 +39,12 @@ export default function Project({
       <section className="bg-gray-100 group w-full max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative min-h-[20rem] h-full hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-gray-500/10 dark:hover:bg-white/5">
         <Meteors number={40} className="group-hover:hidden block" />
         <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
-          <Link
-            target="_blank"
-            href={demoUrl}
+          <div
+           
             className="text-2xl font-semibold group-hover:underline underline-offset-4"
           >
-            {title}
-          </Link>
+            <LinkPreview url={demoUrl}>{title}</LinkPreview>
+          </div>
 
           <Image
             src={imageUrl}

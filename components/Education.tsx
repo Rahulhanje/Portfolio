@@ -8,6 +8,7 @@ import {
 } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
 import { LinkPreview } from "./ui/link-preview";
+import SectionHeading from "./section-heading";
 
 interface TimelineEntry {
   title: string;
@@ -51,13 +52,9 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
       ref={containerRef}
     >
       <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
-        <motion.h2 
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="text-lg md:text-4xl mb-4 text-black dark:text-white max-w-4x font-bold text-center"
-        >
+        <SectionHeading>
           My Education Journey
-        </motion.h2>
+        </SectionHeading>
       </div>
 
       <div ref={ref} className="relative max-w-7xl mx-auto pb-20">

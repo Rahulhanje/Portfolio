@@ -5,7 +5,7 @@ import Education from "@/components/Education";
 import NewSkillsSection from "@/components/newSkillsSection";
 import { Opensource } from "@/components/Opensource";
 import Projects from "@/components/projects";
-import Skills from "@/components/skills";
+
 
 
 export default function Home() {
@@ -16,14 +16,14 @@ export default function Home() {
         <div className="absolute top-12 left-12 w-96 h-96 bg-blue-800 rounded-full filter blur-[120px] opacity-40 sm:top-6 sm:left-6 sm:w-64 sm:h-64 md:w-80 md:h-80" />
         <div className="absolute right-0 w-96 h-96 bg-blue-800 rounded-full filter blur-[100px] opacity-40 sm:w-64 sm:h-64 md:w-80 md:h-80" />
       </div> */}
-    
+
       <AboutMe />
       <Education />
-      {/* <Skills />  */}
-       <NewSkillsSection/>
+      <NewSkillsSection />
       <Projects />
       <Opensource />
       <Contact />
+
     </main>
   );
 }
