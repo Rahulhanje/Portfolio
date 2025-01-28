@@ -13,6 +13,7 @@ import { useSectionInView } from "@/lib/hooks";
 import Player from "lottie-react";
 import contact from "../public/contact.json";
 import { BackgroundBeamsWithCollision } from "./ui/background-beams-with-collision";
+import { Globe } from "./ui/earthimage";
 
 export default function Contact() {
   const { ref } = useSectionInView("Contact");
@@ -57,6 +58,7 @@ export default function Contact() {
               animationData={contact}
               className="w-[250px] h-[250px] sm:w-[350px] sm:h-[350px]"
             />
+            
           </div>
 
           <div className="w-full max-w-lg">

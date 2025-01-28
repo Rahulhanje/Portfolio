@@ -9,11 +9,17 @@ import { IoLogoGameControllerA } from 'react-icons/io';
 import { MdOutlineSportsHandball } from 'react-icons/md';
 import { LinkPreview } from "@/components/ui/link-preview";
 import SectionHeading from './section-heading';
+import { useSectionInView } from '@/lib/hooks';
 
 const AboutMe: React.FC = () => {
+      const { ref } = useSectionInView("About");
     return (
+        <section
+      id="about"
+      ref={ref}
+      className="mb-28 scroll-mt-28 sm:mb-40"
+    >
         <motion.section
-            id="about"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
@@ -115,6 +121,7 @@ const AboutMe: React.FC = () => {
                 </div>
             </div>
         </motion.section>
+        </section>
     );
 };
 

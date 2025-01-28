@@ -5,6 +5,7 @@ import SectionHeading from "./section-heading";
 import { projectsData } from "@/lib/data";
 import Project, { CreateProject } from "./project";
 import { useSectionInView } from "@/lib/hooks";
+import { TracingBeam } from "./ui/tracingbeam";
 
 export default function Projects() {
   const { ref } = useSectionInView("Projects", 0.5);
@@ -18,16 +19,24 @@ export default function Projects() {
 
   return (
     <section ref={ref} id="projects" className="scroll-mt-28 mb-28">
-      <SectionHeading>My projects</SectionHeading>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-        {projectsData.map((project) => (
-          <React.Fragment key={project.title}>
-            <Project {...project} />
-          </React.Fragment>
-        ))}
-        <CreateProject />
-        {projectsData.length % 2 !== 0 && <div className="hidden md:block"></div>}
-      </div>
+      <TracingBeam className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="space-y-8">
+          <SectionHeading>My projects</SectionHeading>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 lg:gap-10">
+            {projectsData.map((project) => (
+              <div key={project.title} className="w-full">
+                <Project {...project} />
+              </div>
+            ))}
+            <div className="w-full">
+              <CreateProject />
+            </div>
+            {projectsData.length % 2 !== 0 && (
+              <div className="hidden md:block w-full" />
+            )}
+          </div>
+        </div>
+      </TracingBeam>
     </section>
   );
 }

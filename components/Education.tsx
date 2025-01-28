@@ -9,6 +9,7 @@ import {
 import React, { useEffect, useRef, useState } from "react";
 import { LinkPreview } from "./ui/link-preview";
 import SectionHeading from "./section-heading";
+import { useSectionInView } from "@/lib/hooks";
 
 interface TimelineEntry {
   title: string;
@@ -42,10 +43,12 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
   useMotionValueEvent(scrollYProgress, "change", (latest) => {
     setScrollValue(latest);
   });
+  const { ref: stiffness } = useSectionInView("Education");
 
   return (
     <section
       id="education"
+      ref={stiffness}
     >
       <div 
       className="w-full font-sans md:px-10 pb-8 relative"
