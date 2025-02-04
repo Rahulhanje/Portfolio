@@ -34,15 +34,12 @@ export default function Project({
         scale: scaleProgess,
         opacity: opacityProgess,
       }}
-      className="group min-h-[20rem]"
+      className="group h-[32rem]" // Set fixed height
     >
-      <section className="bg-gray-100 group w-full max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative min-h-[20rem] h-full hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-gray-500/10 dark:hover:bg-white/5">
+      <section className="bg-gray-100 group w-full max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative h-full hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-gray-500/10 dark:hover:bg-white/5">
         <Meteors number={40} className="group-hover:hidden block" />
         <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
-          <div
-           
-            className="text-2xl font-semibold group-hover:underline underline-offset-4"
-          >
+          <div className="text-2xl font-semibold group-hover:underline underline-offset-4">
             <LinkPreview url={demoUrl}>{title}</LinkPreview>
           </div>
 
@@ -70,15 +67,11 @@ export default function Project({
             </ul>
 
             <div className="flex gap-2 mt-4">
-
               <a href={demoUrl} target="_blank" rel="noopener noreferrer" className="text-black dark:text-white font-bold">
                 <button className="px-3 py-1 bg-black text-gray-100 dark:bg-white/5 dark:hover:border-gray-500 border border-gray-900 rounded-2xl">
-                  
-                    Demo
-                  
+                  Demo
                 </button>
               </a>
-
 
               <Link href={githubUrl} target="_blank">
                 <button className="px-3 py-1 text-black dark:text-gray-200 dark:hover:border-gray-500 border border-gray-300 hover:border-gray-400 dark:border-gray-600 rounded-2xl">
@@ -125,9 +118,9 @@ export function CreateProject() {
         scale: scaleProgess,
         opacity: opacityProgess,
       }}
-      className="group min-h-[20rem]"
+      className="group h-[32rem]" // Set fixed height to match Project component
     >
-      <section className="bg-gray-100 group flex flex-col gap-2 items-center justify-center w-full max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative min-h-[20rem] h-full hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-gray-500/10 dark:hover:bg-white/5">
+      <section className="bg-gray-100 group flex flex-col gap-2 items-center justify-center w-full max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative h-full hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-gray-500/10 dark:hover:bg-white/5">
         <Meteors />
         <h1 className="text-black dark:text-white text-lg">Adding soon...</h1>
         <Link

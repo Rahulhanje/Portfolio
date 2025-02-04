@@ -10,6 +10,7 @@ import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import { TypewriterEffect } from "./ui/typewriter-effect";
+import BlueLightEffect from "./ui/BlueLightEffect";
 
 
 
@@ -35,7 +36,7 @@ export default function Intro() {
       ref={ref}
       id="home"
       className="min-h-screen w-full flex items-center justify-center px-4 sm:px-6 lg:px-8 scroll-mt-[100rem]"
-    >
+    >   
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row items-center justify-center gap-8">
           {/* Lottie Animation - Responsive size */}
