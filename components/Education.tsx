@@ -164,7 +164,9 @@ const timelineData: TimelineEntry[] = [
           PRIMARY AND HIGH SCHOOL
         </div>
         <div className="font-bold text-3xl text-slate-800 dark:text-slate-400">
+          <LinkPreview url="https://drive.google.com/file/d/174t9ZebDK34FgNVFw7dw3h_phm8im61E/view?usp=sharing">
           Janata Education Society Harugeri Belagavi.
+          </LinkPreview>
         </div>
       </div>
     ),
