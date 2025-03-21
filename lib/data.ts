@@ -119,6 +119,7 @@ export const categorizedSkills: SkillsData = {
     "Python",
     "JavaScript",
     "TypeScript",
+    "Solidity",
   ],
   "Frontend Technologies": [
     "HTML",

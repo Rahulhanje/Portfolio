@@ -13,11 +13,11 @@ import {
 import { SiTypescript, SiNextdotjs, SiTailwindcss, SiPrisma, 
          SiMongodb, SiPostgresql, SiMysql, SiSupabase, 
          SiVercel, SiPostman, SiVite, 
-         SiNpm, SiExpress, 
+         SiNpm, SiExpress,SiSolidity , 
          SiHonor,
          SiTurborepo} from "react-icons/si";
 
-
+import { BsSourceforge } from "react-icons/bs";
 import { TbBrandCpp, TbBrandFramerMotion,TbBrandVscode  } from "react-icons/tb";
 import SectionHeading from "./section-heading";
 import { useSectionInView } from "@/lib/hooks";
@@ -31,7 +31,8 @@ const skillCategories = {
       { name: "Java", icon: <FaJava className="w-5 h-5" /> },
       { name: "Python", icon: <FaPython className="w-5 h-5" /> },
       { name: "JavaScript", icon: <FaJs className="w-5 h-5" /> },
-      { name: "TypeScript", icon: <SiTypescript className="w-5 h-5" /> }
+      { name: "TypeScript", icon: <SiTypescript className="w-5 h-5" /> },
+      {name: "Solidity", icon: <SiSolidity className="w-5 h-5" /> }
     ]
   },
   "Frontend Technologies": {
@@ -81,7 +82,8 @@ const skillCategories = {
       { name: "Postman", icon: <SiPostman className="w-5 h-5" /> },
       { name: "Vite", icon: <SiVite className="w-5 h-5" /> },
       { name: "Turborepo", icon: <SiTurborepo  className="w-5 h-5" /> },
-      { name: "npm", icon: <SiNpm className="w-5 h-5" /> }
+      { name: "npm", icon: <SiNpm className="w-5 h-5" /> },
+      { name: "Forge", icon: <BsSourceforge className="w-5 h-5" /> }
     ]
   }
 };
