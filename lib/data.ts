@@ -4,7 +4,7 @@ import SolanaDap from "@/public/SolanaDap.png";
 import solanaWalletgenerator from '@/public/solanaWalletgenerator.png';
 import Linknest from '@/public/Linknest.png'
 import tweetnest from '@/public/tweetnest.png'
-
+import ChainDemocracy from '@/public/ChainDemocracy.png'
 export const links = [
   {
     name: "Home",
@@ -95,6 +95,15 @@ export const projectsData = [
     imageUrl: tweetnest,
     githubUrl: "https://github.com/Rahulhanje/TweetNest",
     demoUrl: "https://tweetnest-f6uc.onrender.com/",
+  },
+  {
+    title: "ChainDemocracy",
+    description:
+      "TThe Government Proposal Voting Platform is a decentralized application that allows governments to post proposals related to various sectors like social welfare, education, finance, healthcare, and culture. Citizens can vote for or against the proposals, helping the government understand whether the policy is beneficial to the people.",
+    tags: ["Next.js","Solidity","Tailwind","Ethers.js","Hardht","Typescript"],
+    imageUrl: ChainDemocracy,
+    githubUrl: "https://github.com/Rahulhanje/ChainDemocracy",
+    demoUrl: "https://chain-democracy-fe.vercel.app/",
   },
 ] as const;
 
