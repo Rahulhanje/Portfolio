@@ -9,6 +9,8 @@ import { Toaster } from "react-hot-toast";
 import Intro, { GridBackground } from "@/components/intro";
 import { Analytics } from "@vercel/analytics/react";
 import MusicPlayer from "@/components/MusicPlayer";
+import LetterGlitch from "@/components/LetterGlitch";
+import SplashCursor from "@/components/SplashCursor";
 
 
 const poppins = Poppins({
@@ -57,11 +59,20 @@ export default function RootLayout({
             </GridBackground>
             <Analytics />
             <Header />
+            {/* <SplashCursor /> */}
+
             {children}
             <MusicPlayer/>
             <Footer />
             <Toaster position="top-right" />
             <ThemeSwitch />
+            <LetterGlitch
+            glitchColors={["#2b4539", "#61dca3", "#61b3dc"]}
+  glitchSpeed={100}
+  centerVignette={true}
+  outerVignette={false}
+  smooth={true}
+/>
           </ActiveSectionContextProvider>
         </ThemeContextProvider>
       </body>
