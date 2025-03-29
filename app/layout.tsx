@@ -8,6 +8,7 @@ import ThemeContextProvider from "@/context/theme-context";
 import { Toaster } from "react-hot-toast";
 import Intro, { GridBackground } from "@/components/intro";
 import { Analytics } from "@vercel/analytics/react";
+import MusicPlayer from "@/components/MusicPlayer";
 
 
 const poppins = Poppins({
@@ -57,6 +58,7 @@ export default function RootLayout({
             <Analytics />
             <Header />
             {children}
+            <MusicPlayer/>
             <Footer />
             <Toaster position="top-right" />
             <ThemeSwitch />
