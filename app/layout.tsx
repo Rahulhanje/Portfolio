@@ -66,13 +66,6 @@ export default function RootLayout({
             <Footer />
             <Toaster position="top-right" />
             <ThemeSwitch />
-            <LetterGlitch
-            glitchColors={["#2b4539", "#61dca3", "#61b3dc"]}
-  glitchSpeed={100}
-  centerVignette={true}
-  outerVignette={false}
-  smooth={true}
-/>
           </ActiveSectionContextProvider>
         </ThemeContextProvider>
       </body>
