@@ -7,7 +7,6 @@ import { Opensource } from "@/components/Opensource";
 import Projects from "@/components/projects";
 
 
-
 export default function Home() {
   return (
     <main className="flex flex-col items-center px-4 sm:px-2 md:px-6 lg:px-12">

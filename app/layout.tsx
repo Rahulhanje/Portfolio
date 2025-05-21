@@ -11,6 +11,7 @@ import { Analytics } from "@vercel/analytics/react";
 import MusicPlayer from "@/components/MusicPlayer";
 import LetterGlitch from "@/components/LetterGlitch";
 import SplashCursor from "@/components/SplashCursor";
+import { Analytics } from '@vercel/analytics/next';
 
 
 const poppins = Poppins({
@@ -62,6 +63,8 @@ export default function RootLayout({
             {/* <SplashCursor /> */}
 
             {children}
+                    <Analytics />
+
             <MusicPlayer/>
             <Footer />
             <Toaster position="top-right" />
