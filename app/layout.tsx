@@ -9,9 +9,8 @@ import { Toaster } from "react-hot-toast";
 import Intro, { GridBackground } from "@/components/intro";
 import { Analytics } from "@vercel/analytics/react";
 import MusicPlayer from "@/components/MusicPlayer";
-import LetterGlitch from "@/components/LetterGlitch";
-import SplashCursor from "@/components/SplashCursor";
 
+import Head from 'next/head';
 
 const poppins = Poppins({
   fallback: ["sans-serif"],
