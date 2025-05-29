@@ -37,6 +37,7 @@ export default function Intro() {
       id="home"
       className="min-h-screen w-full flex items-center justify-center px-4 sm:px-6 lg:px-8 scroll-mt-[100rem]"
     >   
+    
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row items-center justify-center gap-8">
           {/* Lottie Animation - Responsive size */}
