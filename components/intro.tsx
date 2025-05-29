@@ -62,7 +62,7 @@ export default function Intro() {
             >
               <TypewriterEffect
                 words={[
-                  { text: "Hello, I'm Rahul.", className: "font-bold" },
+                  { text: "Hello, I'm Rahul Hanje.", className: "font-bold" },
                   
                 ]}
               />

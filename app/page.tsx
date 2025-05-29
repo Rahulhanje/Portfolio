@@ -5,10 +5,31 @@ import Education from "@/components/Education";
 import NewSkillsSection from "@/components/newSkillsSection";
 import { Opensource } from "@/components/Opensource";
 import Projects from "@/components/projects";
+import Head from 'next/head';
 
 
 export default function Home() {
   return (
+    <>
+    <Head>
+        <title>Rahul Hanje | Full Stack Developer</title>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              name: "Rahul Hanje",
+              url: "https://rahulhanje.in",
+              jobTitle: "Full Stack Developer",
+              sameAs: [
+                "https://github.com/Rahulhanje",
+                "https://linkedin.com/in/rahulhanje"
+              ],
+            }),
+          }}
+        />
+      </Head>
     <main className="flex flex-col items-center px-4 sm:px-2 md:px-6 lg:px-12">
       {/* Background Circles */}
       {/* <div className="hidden sm:block">
@@ -25,5 +46,6 @@ export default function Home() {
       <Contact />
 
     </main>
+    </>
   );
 }

@@ -22,22 +22,26 @@ const poppins = Poppins({
 
 export const metadata = {
   title: "Rahul | Personal Portfolio",
-  description:
-    "Rahul is a full-stack developer  building web applications using MERN stack, React, Node.js, and Tailwind CSS.",
-  keywords:
-    "Rahul, full-stack developer, MERN stack, React developer, portfolio, web development, software engineer",
-  author: "Rahul",
+  description: "Official website of Rahul Hanje – a passionate full stack web developer building modern web apps using React, Node.js, and MERN stack.",
+  keywords: ["Rahul Hanje", "Full Stack Developer", "Rahul Hanje Portfolio", "Rahul Hanje Web Developer", "Rahul Hanje Personal Website", "Rahul Hanje Resume", "Rahul Hanje CV", "Rahul Hanje Contact", "Rahul Hanje Projects", "Rahul Hanje Skills", "Rahul Hanje About Me", "Rahul Hanje Education", "Rahul Hanje Experience"],
+  author: "Rahul Hanje",
   viewport: "width=device-width, initial-scale=1.0",
   robots: "index, follow",
   openGraph: {
-    title: "Rahul | Personal Portfolio",
-    description: "Explore Rahul's work as a full-stack developer.",
+    title: "Rahul Hanje | Full Stack Developer",
+    description: "Official portfolio of Rahul Hanje. Explore projects, blogs, and contact details.",
     url: "https://rahulhanje.in",
-    site_name: "Rahul's Portfolio",
+    site_name: "Rahul Hanje",
   },
   verification: {
     google: "FVtN87WJzLdzUHzErxqphSyJUJ3Wbo-AifCv5EV-9jg",
   },
+  twitter: {
+  // card: "summary_large_image",
+  title: "Rahul Hanje | Portfolio",
+  description: "The official website of Rahul Hanje – full stack web developer.",
+  // images: ["/og-image.png"]
+}
 };
 
 export default function RootLayout({
@@ -47,7 +51,28 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="!scroll-smooth">
+       <Head>
+        <meta name="google-site-verification" content="FVtN87WJzLdzUHzErxqphSyJUJ3Wbo-AifCv5EV-9jg" />
+        {/* Your existing meta tags */}
 
+        {/* Add JSON-LD structured data here */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              name: "Rahul Hanje",
+              url: "https://rahulhanje.in",
+              jobTitle: "Full Stack Developer",
+              sameAs: [
+                "https://github.com/Rahulhanje",
+                "https://linkedin.com/in/rahulhanje"
+              ],
+            }),
+          }}
+        />
+      </Head>
       <body
         className={`${poppins.className} bg-gray-200 text-gray-950 relative  dark:bg-[rgb(9,9,9)] dark:text-gray-50 dark:text-opacity-90 antialiased`}
       >
@@ -64,9 +89,9 @@ export default function RootLayout({
             {/* <SplashCursor /> */}
 
             {children}
-                    <Analytics />
+            <Analytics />
 
-            <MusicPlayer/>
+            <MusicPlayer />
             <Footer />
             <Toaster position="top-right" />
             <ThemeSwitch />
